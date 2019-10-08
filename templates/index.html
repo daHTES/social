@@ -8,10 +8,11 @@
     <link rel="shortcut icon" type="image/png" href="{%static '../static/faicon/faIcon.png'%}">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b05334bd9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<div class="navbar navbar-expand-sm navbar-dark bg-dark">
+<div class="navbar navbar-expand-sm navbar-dark bg-black">
 
     <a class="navbar-brand" href="#">
 
@@ -49,35 +50,261 @@
 
         <h1 class="display-3">OverHorizon</h1>
 
-        <p class="lead d-none d-sm-block">Все возможности, которые мы собирали во всех социальных сетей Здесь!</p>
+        <p class="lead d-none d-sm-block">Все фишки социальных сетей Здесь!</p>
 
-        <button id="btnFirstActionOnMainPage" class="btn btn-primary px-5 mt-2">Попробуйте!</button>
+        <button id="btnFirstActionOnMainPage" class="btn btn-primary px-5 mt-2" data-toggle="modal" data-target="#bokingModel">Попробуйте!</button>
 
     </div>
 
 </section>
 <section>
+
     <div class="container text-center mt-5">
-        <h2>Lorem ipsum dolor sit amet.</h2>
+
+        <h2>Самые бесценные наши отношения строяться вокруг игр.</h2>
+
         <div class="row">
+
             <div class="col-md-4 p-3">
-                <img src="{% static 'img/mobile.png' %}" width="150" height="150" alt="" class="img-fluid d-none d-sm-inline">
-                <h3>Lorem ipsum dolor.</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, veritatis.</p>
+                <img src="{% static 'img/computer.png' %}" width="150" height="150" alt="" class="img-fluid">
+                <h3>Призвание</h3>
+                <p class="lead">Предназначен для удобства общения с теми, кто для вас важен.</p>
             </div>
-                        <div class="col-md-4 p-3">
-                <img src="{% static 'img/manyChoice.png' %}" width="150" height="100" alt="" class="img-fluid d-none d-sm-inline">
-                <h3>Lorem ipsum dolor.</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, veritatis.</p>
+
+            <div class="col-md-4 p-3">
+                <img src="{% static 'img/mask.png' %}" width="150" height="100" alt="" class="img-fluid">
+                <h3>Кто мы</h3>
+                <p class="lead">OverHorizont — это небольшая группа единомышленников и лютелей игр.</p>
             </div>
-                        <div class="col-md-4 p-3">
-                <img src="{% static 'img/analytics.png' %}" width="150" height="150" alt="" class="img-fluid d-none d-sm-inline">
-                <h3>Lorem ipsum dolor.</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, veritatis.</p>
+
+            <div class="col-md-4 p-3">
+                <img src="{% static 'img/idea.png' %}" width="150" height="150" alt="" class="img-fluid">
+                <h3>Технологии</h3>
+                <p class="lead">OverHorizont реально жгут во всём — от технологий до команды.</p>
+
             </div>
+
         </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container text-center p-3">
+        <!--Платформы-->
+        <h3>Поддерживаемые платформы.</h3>
+
+        <div class="row">
+
+            <div class="col-md-6">
+            <div class="card">
+                <img src="{% static 'img/windows.jpg' %}" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">Windows.</h2>
+                    <a href="#" class="btn btn-lg btn-outline-info">Скачать</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+            <div class="card">
+                <img src="{% static 'img/macoslogo.jpg' %}" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">MacOs.</h2>
+                    <a href="#" class="btn btn-lg btn-outline-info">Скачать</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="quotes">
+
+    <div class="container text-center mt-5">
+        <!--Отзывы-->
+        <h3>OverHorizont сообщество</h3>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <i class="fas fa-quote-left fa 2x text-primary mb-4"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">OverHorizont приобретает всё больший вес. С ним стоит познакомиться, если вы ищете новые способы связи с сообществами ваших любимых игр.</p>
+                    <footer class="blockquote-footer">MonkeyMan</footer>
+                </blockquote>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <i class="fas fa-quote-left fa 2x text-primary mb-4"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Наше тесное сообщество сложилось благодаря OverHorizont — это был идеальный инструмент для нашего сплочения.</p>
+                    <footer class="blockquote-footer">Woolf</footer>
+                </blockquote>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <i class="fas fa-quote-left fa 2x text-primary mb-4"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">OverHorizont реально жгут во всём — от технологий до команды. Не терпится увидеть, что будет дальше.</p>
+                    <footer class="blockquote-footer">DarJli</footer>
+                </blockquote>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <i class="fas fa-quote-left fa 2x text-primary mb-4"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Интуитивно понятный и настраиваемый дизайн делает его лучшим сервисом для любого сообщества..</p>
+                    <footer class="blockquote-footer">FunZy</footer>
+                </blockquote>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <i class="fas fa-quote-left fa 2x text-primary mb-4"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Явно новый подход к социальным сетям.</p>
+                    <footer class="blockquote-footer">DoomMan</footer>
+                </blockquote>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <i class="fas fa-quote-left fa 2x text-primary mb-4"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">То что искали всей компанией нашил сразу в одном месте.</p>
+                    <footer class="blockquote-footer">BillY</footer>
+                </blockquote>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container mt-5">
+
+        <div class="row">
+
+            <div class="col-lg-7 mb-3">
+                        <!-- Слайдер картинок-->
+                <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'img/slayder/eyes.jpg' %}" alt="" class="d-block w-100">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static 'img/slayder/kovorking.jpg' %}" alt="" class="d-block w-100">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static 'img/slayder/main.jpg' %}" alt="" class="d-block w-100">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static 'img/slayder/working.jpg' %}" alt="" class="d-block w-100">
+                        </div>
+
+                        <!-- Кнопки для переключения слайдера-->
+                        <a href="#mainCarousel" class="carousel-control-prev" data-slide="prev" role="button">
+                            <span class="carousel-control-prev-icon" area-hidden="true"></span>
+                            <span class="sr-only">Предыдущий</span>
+                        </a>
+                        <a href="#mainCarousel" class="carousel-control-next" data-slide="next" role="button">
+                            <span class="carousel-control-next-icon" area-hidden="true"></span>
+                            <span class="sr-only">Предыдущий</span>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!---Стрелка возле слайдера для перехода--->
+            <div class="col-lg-5">
+                <h3>Главные особенности нашего социального продукта.</h3>
+                <p>Проверенные поставщики сырья и компонентов. Контроль на каждом этапе производства. Лабораторные исследования и контроль продукции на усовершенствованном оборудовании.
+                На все компоненты имеются сертификаты, подтверждающие безопасность применения продукции ТМ «Гебау» во всех заявленных сферах производства.
+                    Цветовая гамма не ограничена стандартными предложениями. Мы производим листы в корпоративных цветах по индивидуальным заказам.
+                    Специалисты завода «Гебау Кюнстстофф» быстро и квалифицированно предлагают решения по нестандартным продуктам и оперативно изготавливают новую продукцию под заказ.
+                </p>
+                <a href="#">Подробнее о продукте. <i class="fa fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+    <div class="container text-center mt-5">
+                <i class="fas fa-quote-left fa 2x text-primary mb-4"></i>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Геймеры, нерды, мамы, папы, программисты, дизайнеры, маркетологи, техподдержка. OverHorizont — это небольшая группа единомышленников, которые хотят объединить людей на почве любви к играм.
+                        В основе нашей философии многообразие и равные возможности.
+                        Мы считаем, что многообразие позитивно влияет на качество продукта, принимаемые решения и рабочую обстановку.
+                        Мы стремимся сделать OverHorizont олицетворением мира, в котом мы хотим жить и играть..</p>
+                    <footer class="blockquote-footer">DarJli</footer>
+                </blockquote>
     </div>
 </section>
+
+<section class="bg-dark py-5">
+    <div class="container text-white text-center">
+        <p class="lead">All Right Reserved. Все права защищены 2019(с.)</p>
+    </div>
+</section>
+
+<section id="footer" class="bg-secondary">
+    <!--Футер-->
+    <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-white">Веб-Платформа</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link text-white">База Знаний</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link text-white">Спросить</a>
+        </li>
+    </ul>
+
+</section>
+
+<div class="modal" id="bokingModel" tabindex="-1" role="dialog">
+    <!--Форма всплывающей регистрации-->
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Новый юзер</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="email">Email адрес</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ваш email">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

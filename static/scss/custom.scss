@@ -3,7 +3,7 @@ body {
 }
 .navbar {
   font-weight: 100;
-  background: rgba(10, 15, 21, 0.87);
+  background: rgba(0, 0, 0, 0.87);
   .navbar-brand h3 {
     font-weight: 100;
   }
@@ -17,6 +17,16 @@ body {
   }
 
 }
+#quotes{
+  i {
+    opacity: 0.3;
+
+  }
+}
+#footer{
+  font-weight: 100 ;
+}
+
 #showcase{
   background: url("../img/earth_horizon-2560x1440.jpg") top center / cover no-repeat;
   min-height: 500px;
